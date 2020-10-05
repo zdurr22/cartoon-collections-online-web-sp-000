@@ -9,6 +9,7 @@ end
 def summon_captain_planet(veggies)# code an argument here
   # Your code here
   veggies.map do |call|
+    call.capitalize << "!"
   end
 end
 
