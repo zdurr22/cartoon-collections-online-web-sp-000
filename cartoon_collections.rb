@@ -12,7 +12,7 @@ def summon_captain_planet(veggies)
 end
 
 def long_planeteer_calls(call)
-  if call.length < 4
+  if call.length > 4
     return true
   else
     return false
