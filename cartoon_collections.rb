@@ -19,7 +19,10 @@ end
 
 def find_the_cheese(cheese_type)# code an argument here
   # the array below is here to help
-  cheese_type.find do |cheese|
+  i = 0
+  while i < cheese_type.length
+    return cheese_type[i] if yield(cheese_type[i])
+    i = i + 1
   end
   cheese_types = ["cheddar", "gouda", "camembert"]
 end
